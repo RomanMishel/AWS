@@ -5,15 +5,15 @@ provider "aws" {
 }
 
 resource "aws_instance" "demoinstance1" {
-  ami           = "ami-362156387130"  # Replace with the desired AMI ID
+  ami           = "ami-04e601abe3e1a910f"
   instance_type = "t2.micro"
-  # Add any other necessary configurations
+  
 }
 
 resource "aws_instance" "demoinstance2" {
-  ami           = "ami-362156387130"  # Replace with the desired AMI ID
+  ami           = "ami-04e601abe3e1a910f"
   instance_type = "t2.micro"
-  # Add any other necessary configurations
+  
 }
 
 resource "vpc" "myvpc" {
