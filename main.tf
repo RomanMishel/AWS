@@ -1,7 +1,17 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 3.0.0"
+    }
+  }
+}
+
 provider "aws" {
+  region     = "eu-central-1"
   access_key = "AKIAVIURT5M5L7ZA5AN5"
   secret_key = "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"
-  region     = "eu-central-1"
+
 }
 
 resource "aws_instance" "demoinstance1" {
