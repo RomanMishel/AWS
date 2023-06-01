@@ -1,6 +1,6 @@
 module "vpc" {
     source  = "terraform-aws-modules/vpc/aws"
-    version = "3.5.0"
+    version = "4.0.2"
 
     name = "main"
     cidr = "10.0.0.0/16"
@@ -12,7 +12,7 @@ module "vpc" {
     enable_nat_gateway =  true
     single_nat_gateway =  true
 
-    tags{
+    tags = {
         Terraform = "true"
         Environment = "dev"
 
