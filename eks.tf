@@ -27,7 +27,7 @@ module "eks" {
                 role ="batch"
             }
 
-            instance_type = ["c4.large"]
+            instance_type = ["t2.micro"]
             capacity_type = "ON_DEMAND"
 
             taints = [{
@@ -48,7 +48,7 @@ module "eks" {
             }
 
 
-            instance_type = ["g3s.xlarge"]
+            instance_type = ["t2.micro"]
 
 
             taints = [{
